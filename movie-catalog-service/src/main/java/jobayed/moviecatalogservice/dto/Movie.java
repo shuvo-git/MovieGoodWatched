@@ -1,4 +1,4 @@
-package jobayed.movieinfoservice.dto;
+package jobayed.moviecatalogservice.dto;
 
 import lombok.AllArgsConstructor;
 import lombok.Getter;

@@ -1,13 +1,15 @@
-package jobayed.movieinfoservice.dto;
+package dto;
 
 import lombok.AllArgsConstructor;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
 import lombok.Setter;
 
-@Getter @Setter @AllArgsConstructor @NoArgsConstructor
-public class Movie
-{
+@Getter
+@Setter
+@NoArgsConstructor
+@AllArgsConstructor
+public class Rating {
     private String movieId;
-    private String name;
+    private int rating;
 }
