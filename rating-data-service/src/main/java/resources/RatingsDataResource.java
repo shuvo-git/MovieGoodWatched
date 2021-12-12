@@ -1,16 +1,17 @@
 package resources;
 
 import dto.Rating;
-import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.PathVariable;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RestController;
+import org.springframework.web.bind.annotation.*;
 
 @RestController
 @RequestMapping("ratingsData/")
 public class RatingsDataResource
 {
-    @GetMapping("/{movieId}")
+    @RequestMapping("test")
+    public String hello(){
+        return "hello";
+    }
+    @RequestMapping(value = "/{movieId}",method = RequestMethod.GET)
     public Rating getRating(@PathVariable("movieId") String movieId)
     {
         return new Rating(movieId,4);
