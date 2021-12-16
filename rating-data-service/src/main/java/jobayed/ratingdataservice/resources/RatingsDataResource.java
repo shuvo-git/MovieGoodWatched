@@ -1,6 +1,6 @@
-package resources;
+package jobayed.ratingdataservice.resources;
 
-import dto.Rating;
+import jobayed.ratingdataservice.dto.Rating;
 import org.springframework.web.bind.annotation.*;
 
 @RestController

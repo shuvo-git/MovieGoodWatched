@@ -1,4 +1,4 @@
-package dto;
+package jobayed.ratingdataservice.dto;
 
 import lombok.AllArgsConstructor;
 import lombok.Getter;
